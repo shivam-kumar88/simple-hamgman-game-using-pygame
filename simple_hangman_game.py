@@ -37,7 +37,7 @@ for i in range(7):
 #variables of the project
 hangman_status = 0
 f = open("hangman words.txt", 'r')
-words = f.readlines()#['PYGAME', 'HANGMAN', 'LAPTOP', 'DEVELOPER', 'PROGRAMMER', 'HACKER', 'ENGINE', 'MOUSE', 'HACK']
+words = f.readlines() #ADDED the text file using file handeling
 word = random.choice(words)
 print(word)
 guessed = []
