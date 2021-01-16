@@ -38,8 +38,10 @@ for i in range(7):
 hangman_status = 0
 f = open("hangman words.txt", 'r')
 words = f.readlines() #ADDED the text file using file handeling
-word = random.choice(words)
+initword = random.choice(words) #here initword is the intial word with a space at the end of the word that we want
+word = initword[:-1]  #so i have removed the last space
 print(word)
+print(len(word))
 guessed = []
 
 #COLOURS GRADING
