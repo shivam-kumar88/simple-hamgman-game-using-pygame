@@ -36,8 +36,10 @@ for i in range(7):
 
 #variables of the project
 hangman_status = 0
-words = ['PYGAME', 'HANGMAN', 'LAPTOP', 'DEVELOPER', 'PROGRAMMER', 'HACKER', 'ENGINE', 'MOUSE', 'HACK']
+f = open("hangman words.txt", 'r')
+words = f.readlines()#['PYGAME', 'HANGMAN', 'LAPTOP', 'DEVELOPER', 'PROGRAMMER', 'HACKER', 'ENGINE', 'MOUSE', 'HACK']
 word = random.choice(words)
+print(word)
 guessed = []
 
 #COLOURS GRADING
